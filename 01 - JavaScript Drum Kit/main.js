@@ -1,6 +1,6 @@
-function playingSound(e) {
-  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+function playingSound(event) {
+  const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`)
+  const key = document.querySelector(`.key[data-key="${event.keyCode}"]`)
   if (!audio) return
   // ボタン連打で再生するため
   audio.currentTime = 0
