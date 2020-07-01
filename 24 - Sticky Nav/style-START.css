@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+.fixed-nav nav{
+  position: fixed;
+  box-shadow: 0 5px rgba(#000, 0.1);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -25,6 +33,9 @@ body {
   transition: transform 0.5s;
 }
 
+.fixed-nav .site-nav {
+  transform: scale(1);
+}
 header {
   text-align: center;
   height: 50vh;
@@ -72,6 +83,10 @@ li.logo {
   transition: all .5s;
   font-weight: 600;
   font-size: 30px;
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
 }
 
 li.logo a {
