@@ -39,6 +39,7 @@ function startGame() {
 }
 
 function bonk(e) {
+  // ユーザー操作がなされているか精査する
   if (!e.isTrusted) return // cheaten
   score++
   this.parentNode.classList.remove('up')
